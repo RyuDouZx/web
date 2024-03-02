@@ -1,0 +1,309 @@
+/*MOVE TO DE LUGAR*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*PAGINA COLOR Y TEXTO*/
+body{
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    font-family: "Oswald", sans-serif;
+}
+
+/*LINK REDIRECCIONES COLOR*/
+a{
+    color: white;
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+/*CENTRAR EN LA PAGINA*/
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+/* NAVEGACION */
+.nav-main {
+    font-size: 17px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 20px 0;
+}
+/*LINEA BLANCA ABAJO DE LOS LINKS*/
+hr {
+    margin: 20px 0;
+}
+/*TAMAÑO IMAGEN LOGO*/
+.nav-brand{
+    width: 50px;
+}
+
+/*PONELO UNO AL LADO DEL OTRO Y ARRIBA EN EL CENTRO*/
+.nav-main ul{
+    display: flex;
+}
+
+/*COLOR ALREDEDOR LINK*/
+.nav-main ul.nav-menu li a:hover{
+    border-bottom: 2px solid rgb(134, 0, 0);
+}
+
+/*DISTANCIA ENTRE CADA LINK*/
+.nav-main ul li{
+    padding: 10px;
+}
+
+/*PASALO DE LA DERECHA A LA IZQUIERDA*/
+.nav-main ul.nav-menu{
+    flex: 1;
+    margin-left: 40px;
+}
+/*LUPAJAJA*/
+.nav-main ul.nav-menu-right:hover{
+    border-bottom: 1px solid white;
+}
+
+.nav-main ul.nav-menu.show {
+    transform: translateX(-20px);
+}
+
+.menu-btn {
+    position: absolute;
+    cursor: pointer;
+    top: 11px;
+    right: 30px;
+    z-index: 2;
+    font-size: 25px;
+    display: none;
+}
+
+/*IMAGEN CENTRO TAMAÑO*/
+.showcase {
+    width: 100%;
+    height: 600px;
+    background: url("img/playa.jpg") no-repeat center center/cover;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+/*TITULO ¿QUE ES ATAQUE A LOS TITANES?*/
+.showcase h2 {
+    padding: auto;
+    color: rgb(0, 0, 0);
+}
+
+/*TEXTO DEBAJO DEL TITULO*/
+.showcase p {
+    color: rgb(0, 0, 0);
+    margin-bottom: 20px;
+    padding: 35px;
+}
+
+/*BOTON VER MAS*/
+.btn {
+    cursor: pointer;
+    background-color: red;
+    color: rgb(0, 0, 0); 
+    padding: 10px 20px; 
+    border: none; 
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+
+/*DIFUMINACION DEL BOTON*/
+.btn:hover {
+    opacity: .7;
+}
+
+/*NOTICIAS 4 COLUMNA*/
+.news-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 25px;
+    padding: 20px 20px;
+}
+
+/* TAMAÑO IMAGENES */
+.news-cards img {
+    width: 100%;
+    height: 200px;
+}
+
+/* TITULOS 4 CARTAS */
+.news-cards h3 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+/* LEER MAS DE LAS CARTAS */
+.news-cards a {
+    padding: 10px 0;
+    color: white;
+    text-transform: uppercase;
+    display: inline-block;
+}
+/* OPACIDAD DE LAS CARTAS */
+.news-cards a:hover {
+    opacity: .7;
+}
+
+/* TAMAÑO DE IMAGEN */
+.cards-banner-one {
+    width: 100%;
+    height: 350px;
+    background: url(img/tech-red.jpg) no-repeat center center/cover;
+    margin-bottom: 40px;
+}
+
+/* CENTRAR PALABRAS ABAJO */
+.cards-banner-one .content {
+    width: 40%;
+    padding: 90px 0 0 30px;
+    color: white;
+}
+
+/* MOVER BOTON PA ABAJO */
+.cards-banner-one p,
+.cards-banner-one h2 {
+    margin: 10px 0 20px 0;
+}
+
+/* IMAGEN SEGUNDA SECCION */
+.cards-banner-two {
+    width: 100%;
+    height: 350px;
+    background: url(img/image-five.jpg) no-repeat center center/cover;
+    margin-bottom: 40px;
+}
+
+/* ALINEAR  PALABRASC*/
+.cards-banner-two .content {
+    width: 40%;
+    padding: 90px 0 0 30px;
+    color: white;
+}
+
+/* BOTON ABAJO */
+.cards-banner-two p,
+.cards-banner-two h2 {
+    margin: 10px 0 20px 0;
+}
+
+.social {
+    margin: 50px;
+}
+
+.social p {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.social div {
+    text-align: center;
+    font-size: 2rem;
+
+}
+.links a i {
+    margin: 0 10px;
+}
+
+.footer-links {
+    background-color: rgb(58, 56, 56);
+    color: #616161;
+    font-size: 12px;
+    padding: 35px 0;
+    gap: 10px;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+}
+
+.footer-container ul {
+    margin: 0 auto;
+}
+
+.footer-container ul li {
+    line-height: 2.8;
+}
+
+.footer {
+    text-align: center;
+    color: #c7c1c1;
+    background-color: #585656;
+    font-size: 12px;
+    padding: 20px 0;
+    padding-bottom: 20px;
+}
+
+@media (max-width: 700px) {
+    .menu-btn {
+        display: block;
+    }
+
+    .nav-main ul.nav-menu li a{
+        padding: 20px;
+        font-size: 20px;
+        
+    }
+
+    .nav-main ul.nav-menu-right {
+        margin-right: 50px;
+    }
+    .nav-main ul.nav-menu {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: #2f3640;
+        width: 30%;
+        height: 100%;
+        border-right: #ccc 1px solid;
+        opacity: 0.9;
+        padding: 30px;
+        transform: translateX(-500px);
+        transition: transform 0.5s ease-in-out;
+        transition: transform .5s ease-in-out;
+      }
+
+    .news-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (max-width: 500px) {
+    .news-cards {
+      grid-template-columns: 1fr;
+    }
+  
+    .cards-banner-one .content,
+    .cards-banner-two .content {
+      width: 100%;
+      padding: 60px 20px;
+    }
+    .footer-links .footer-container {
+      grid-template-columns: 1fr;
+    }
+  
+    .footer-links .footer-container ul {
+      text-align: center;
+    }
+    }
